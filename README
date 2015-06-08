@@ -1,5 +1,7 @@
 This will be a C++ implementations of the OpenTLD (aka Predator)
 ----------------------------------------------------------------------------
+At first, you should make sure opencv are installed.
+----------------------------------------------------------------------------
 This is a work in progress, as of right now the code is functional but pretty slow.
 ----------------------------------------------------------------------------
 Installation Notes
