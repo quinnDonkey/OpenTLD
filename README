@@ -23,6 +23,15 @@ cd ../bin/
 ./run_tld -p ../parameters.yml -s ../datasets/06_car/car.mpg -b ../datasets/06_car/init.txt -r
 
 =====================================
+Tips:
+If you found errors like this, 
+.......... include/TLD.h:50:7: error: no type named 'PatchGenerator' in namespace 'cv'
+  cv::PatchGenerator generator;
+  
+then, you should add this line in TLD.h
+  #include <opencv2/legacy/legacy.hpp>
+For the locations of some function in opencv have been changed. 
+=====================================
 Evaluation
 =====================================
 The output of the program is a file called bounding_boxes.txt which contains all the detections made through the video. This file should be compared with the ground truth file to evaluate the performance of the algorithm. This is done using a python script:

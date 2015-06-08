@@ -4,6 +4,8 @@
 #include <FerNNClassifier.h>
 #include <fstream>
 
+//For the case that the location of some functions like 'PatchGenerator' in opencv have been changed
+//#include <opencv2/legacy/legacy.hpp>
 
 //Bounding Boxes
 struct BoundingBox : public cv::Rect {
